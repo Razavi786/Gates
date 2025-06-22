@@ -59,4 +59,4 @@ async def stripe_auth():
 	finally:
 		await client.aclose()
 
-asyncio.run(app.run())
+asyncio.run(app.run(host="0.0.0.0",port=10000))
